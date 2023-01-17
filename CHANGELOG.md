@@ -1,9 +1,7 @@
-# Change Log
-
-All notable changes to the "kxi-language-support" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+## v0.0.1 [1/16/2023]
 
 - Initial release
+
+## v0.0.2 [1/16/2023]
+
+- Removing block comment
