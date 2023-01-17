@@ -1,0 +1,25 @@
+{
+  "name": "kxi-language-support",
+  "displayName": "kxi-language-support",
+  "description": "Adds basic syntax highlighting for the KXI language used by CS 4490 at UVU.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "kxi",
+      "aliases": ["KXI", "kxi"],
+      "extensions": [".kxi"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "kxi",
+      "scopeName": "source.kxi",
+      "path": "./syntaxes/kxi.tmLanguage.json"
+    }]
+  }
+}

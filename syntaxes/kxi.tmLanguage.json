@@ -1,0 +1,119 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "KXI",
+	"patterns": [
+		{
+			"include": "#keyword-control"
+		},
+		{
+			"include": "#keyword-other"
+		},
+		{
+			"include": "#accessibility-modifier"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#function-name"
+		},
+		{
+			"include": "#weird-function"
+		},
+		{
+			"include": "#class"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#character"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#identifier"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"keyword-control": {
+			"name": "keyword.control.kxi",
+			"match": "break|case|default|else|if|new|return|switch|while"
+		},
+		"keyword-other": {
+			"name": "keyword.other.kxi",
+			"match": "false|kxi2022|null|true"
+		},
+		"accessibility-modifier": {
+			"name": "storage.modifier.kxi",
+			"match": "public|private"
+		},
+		"types": {
+			"name": "keyword.other.kxi",
+			"match": "bool|char|string|void|int"
+		},
+		"function-name": {
+			"match": "(([A-Za-z]|_)\\w*)\\(",
+			"captures": {
+				"1": {
+					"name": "entity.name.function.kxi"
+				}
+			}
+		},
+		"weird-function": {
+			"name": "entity.name.function.kxi",
+			"match": "cin|cout"
+		},
+		"class": {
+			"match": "(class) (([A-Za-z]|_)\\w*)",
+			"captures": {
+				"0": {
+					"name": "keyword.other.kxi"
+				},
+				"2": {
+					"name": "entity.name.class.kxi"
+				}
+			}
+		},
+		"strings": {
+			"name": "string.quoted.double.kxi",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.kxi",
+					"match": "\\\\."
+				}
+			]
+		},
+		"character": {
+			"name": "string.quoted.single.kxi",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.kxi",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.kxi",
+			"begin": "//",
+			"end": "$"
+		},
+		"identifier": {
+			"name": "variable.name.kxi",
+			"match": "([A-Za-z]|_)\\w*"
+		},
+		"numbers": {
+			"name": "constant.numeric.kxi",
+			"match": "\\d+"
+		}
+	},
+	"scopeName": "source.kxi"
+}
