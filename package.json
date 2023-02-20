@@ -2,7 +2,7 @@
   "name": "kxi-language-support",
   "displayName": "KXI Language Support",
   "description": "Adds basic syntax highlighting for the KXI language used by CS 4490 at UVU.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "chaptersevenseeds",
   "engines": {
     "vscode": "^1.74.0"
@@ -10,18 +10,36 @@
   "categories": [
     "Programming Languages"
   ],
-  "repository": "https://github.com/ChapterSevenSeeds/kxi-language-support",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChapterSevenSeeds/kxi-language-support"
+  },
+  "main": "index.js",
+  "icon": "logos/Logo.png",
   "contributes": {
-    "languages": [{
-      "id": "kxi",
-      "aliases": ["KXI", "kxi"],
-      "extensions": [".kxi"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "kxi",
-      "scopeName": "source.kxi",
-      "path": "./syntaxes/kxi.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "kxi",
+        "aliases": [
+          "KXI",
+          "kxi"
+        ],
+        "extensions": [
+          ".kxi"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./logos/Logo-small.png",
+          "dark": "./logos/Logo-small.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "kxi",
+        "scopeName": "source.kxi",
+        "path": "./syntaxes/kxi.tmLanguage.json"
+      }
+    ]
   }
 }

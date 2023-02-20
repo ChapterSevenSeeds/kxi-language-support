@@ -5,3 +5,7 @@
 ## v0.0.2 [1/16/2023]
 
 - Removing block comment
+
+## v0.0.3 [2/20/2023]
+
+- Adding logos
