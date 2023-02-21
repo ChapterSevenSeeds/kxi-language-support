@@ -46,7 +46,7 @@
 		},
 		"keyword-other": {
 			"name": "keyword.other.kxi",
-			"match": "false|kxi2022|null|true"
+			"match": "false|kxi\\d{4}|null|true"
 		},
 		"accessibility-modifier": {
 			"name": "storage.modifier.kxi",
