@@ -42,19 +42,19 @@
 	"repository": {
 		"keyword-control": {
 			"name": "keyword.control.kxi",
-			"match": "break|case|default|else|if|new|return|switch|while"
+			"match": "\\b(break|case|default|else|if|new|return|switch|while)\\b"
 		},
 		"keyword-other": {
 			"name": "keyword.other.kxi",
-			"match": "false|kxi\\d{4}|null|true"
+			"match": "\\b(false|kxi\\d{4}|null|true)\\b"
 		},
 		"accessibility-modifier": {
 			"name": "storage.modifier.kxi",
-			"match": "public|private"
+			"match": "\\b(public|private)\\b"
 		},
 		"types": {
 			"name": "keyword.other.kxi",
-			"match": "bool|char|string|void|int"
+			"match": "\\b(bool|char|string|void|int)\\b"
 		},
 		"function-name": {
 			"match": "(([A-Za-z]|_)\\w*)\\(",
