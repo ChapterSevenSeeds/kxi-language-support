@@ -2,7 +2,7 @@
   "name": "kxi-language-support",
   "displayName": "KXI Language Support",
   "description": "Adds basic syntax highlighting for the KXI language used by CS 4490 at UVU.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "chaptersevenseeds",
   "engines": {
     "vscode": "^1.74.0"
